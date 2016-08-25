@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Steps Demo</title>
+  <script src="index.js"></script>
+
+</head>
+<body>
+  <video id="video-demo"></div>
+  <section class="video-step" id="step1"><h2>Section 1</h2></section>
+  <section class="video-step" id="step2"><h2>Section 2</h2></section>
+
+  <script>
+    new VideoSteps(document.getElementById("video-demo"), [
+        { elementId: '#step1', seekTime: 0.2 },
+        { elementId: '#step2', seekTime: 3.5 }
+    ]);
+  </script>
+</body>
+</html>
